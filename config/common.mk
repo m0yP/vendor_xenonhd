@@ -84,7 +84,9 @@ endif
 
 # XenonHD packages
 PRODUCT_PACKAGES += \
+ifneq ($(DISABLE_AUDIOFX), true)
     AudioFX \
+endif
     BluetoothExt \
     CMAudioService \
     CMParts \
